@@ -90,29 +90,32 @@ body {
 
 .container {
   display: flex;
-  .desktopWrapper {
-    flex: 1;
-    .marketingArea {
-      width: 100%;
-      max-width: 420px;
-      position: fixed;
-      left: calc(50% - 420px);
-      height: 100%;
-      background-color: #eee;
+    .desktopWrapper {
+      flex: 1;
+      .marketingArea {
+        width: 100%;
+        max-width: 420px;
+        position: fixed;
+        left: calc(50% - 420px);
+        height: 100%;
+        background-color: #eee;
+      }
     }
-  }
-  .mobileWrapper {
-    flex: 1;
-    #q-app {
-      width: 100%;
-      max-width: 420px;
+    .mobileWrapper {
+      flex: 1;
+      // zoom: 1.25;
+      #q-app {
+        width: 100%;
+        max-width: 420px;
+      }
     }
-  }
+  
   @media only screen and (max-width: 840px) {
     .desktopWrapper {
       display: none;
     }
     .mobileWrapper {
+      zoom: 1;
       #q-app {
         margin: 0px auto;
       }
