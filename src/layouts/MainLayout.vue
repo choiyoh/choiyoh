@@ -1,12 +1,12 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <q-header class="header bg-primary text-white">
+  <q-layout view="hHh lpR fFf" class="mobile-section">
+    <q-header class="header bg-white text-white">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+            <img src="~assets/Gnex_Img_Logo.svg" />
           </q-avatar>
-          Title
+          <img src="~assets/Gnex_Text_Logo.svg" class="text-logo">
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -100,10 +100,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+// .mobile-section {
+//   zoom: 1.25;
+// }
 .header {
   left: auto;
   right: auto;
   width: 100%;
   max-width: 420px;
+
+  .text-logo {
+    margin-left: 20px;
+  }
 }
 </style>
